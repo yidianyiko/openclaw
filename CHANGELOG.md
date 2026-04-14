@@ -4,6 +4,10 @@ Docs: https://docs.openclaw.ai
 
 ## Unreleased
 
+### Fixes
+
+- WhatsApp/Baileys media upload: keep encrypted upload POSTs streaming while still guarding generic-agent dispatcher wiring, so large outbound media sends avoid full-buffer RSS spikes and OOM regressions. (#65966) Thanks @frankekn.
+
 ## 2026.4.12
 
 ### Changes
